@@ -1,0 +1,4 @@
+interface:
+  display_name: "Options Vol Analyst"
+  short_description: "期权链快照、IV/HV 对比、期限结构、偏度与波动率溢价分析"
+  default_prompt: "Use $options-vol-analyst 分析一个期权品种的 IV 分位、波动率溢价和期限结构。"

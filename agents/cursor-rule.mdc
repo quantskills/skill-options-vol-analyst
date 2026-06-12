@@ -1,0 +1,24 @@
+---
+description: Use the Options Vol Analyst skill for Pandadata option-chain, IV/HV, volatility premium, term-structure, skew, and options-volatility report requests.
+alwaysApply: false
+---
+
+# Options Vol Analyst Skill
+
+When the user asks for 期权波动率分析, IV 历史分位, 波动率溢价, 期权链查询, 波动率曲面/偏度, 期权品种概览, or implied-vs-realized volatility comparison, use the local skill package.
+
+Preferred local project path:
+
+```text
+.cursor/skills/options-vol-analyst
+```
+
+Workflow:
+
+1. Read `.cursor/skills/options-vol-analyst/SKILL.md`.
+2. For full reports, IV percentile work, term-structure analysis, skew/smile diagnostics, or empty-data handling, also read `.cursor/skills/options-vol-analyst/references/analysis-playbook.md`.
+3. Use the Pandadata API skill at `.cursor/skills/pandadata-api` to verify exact `panda_data` method parameters and fields before calling any API.
+4. Confirm option universe and contracts with Pandadata metadata before using symbols or fields.
+5. Smoke-test each planned method on one contract, one expiry, or a short date range before expanding.
+6. Report in Chinese by default, cite method names, parameters, latest data date, and separate data facts from inference.
+7. Do not issue direct trading instructions. If the user asks for strategy code or order logic, hand off after the volatility diagnosis is clear.
