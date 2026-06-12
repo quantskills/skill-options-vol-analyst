@@ -9,13 +9,16 @@ metadata:
   repository_url: https://github.com/quantskills/skill-options-vol-analyst
   project_type: skill
   collection: options-vol-analyst
+  creator: abgyjaguo
+  maintainer: abgyjaguo
+  maintainer_url: https://github.com/abgyjaguo
 ---
 
 # Options Vol Analyst
 
 Use this skill to turn a single options variety, underlying, or contract request into a traceable Pandadata data plan and a Chinese volatility analysis report. Focus on the volatility environment, not order instructions.
 
-Maintained as a QuantSkills community skill under GNU GPL v3.0 (`GPL-3.0-only`). This project is research tooling, not official exchange, broker, or Pandadata guidance.
+Created and maintained by `abgyjaguo` as a QuantSkills community skill under GNU GPL v3.0 (`GPL-3.0-only`). This project is research tooling, not official exchange, broker, or Pandadata guidance.
 
 ## Core Rules
 

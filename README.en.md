@@ -4,6 +4,8 @@
 
 > Is this option's volatility rich or cheap? — Option-chain snapshots, implied vs historical volatility, IV percentiles, term structure, skew/smile, and volatility premium, all in one traceable Chinese volatility diagnosis report.
 
+Creator / maintainer: [`abgyjaguo`](https://github.com/abgyjaguo)
+
 <p align="center">
   <img alt="analysis modes" src="https://img.shields.io/badge/analysis_modes-5-blue">
   <img alt="iv percentile window" src="https://img.shields.io/badge/IV_percentile_window-252d_default-brightgreen">
