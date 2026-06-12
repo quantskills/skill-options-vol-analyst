@@ -12,6 +12,27 @@ metadata:
   creator: abgyjaguo
   maintainer: abgyjaguo
   maintainer_url: https://github.com/abgyjaguo
+quantSkills:
+  project_type: skill
+  category: analyst
+  tags:
+    - options
+    - volatility
+    - implied-volatility
+    - derivatives
+    - pandadata
+  platforms:
+    - claude-code
+    - codex
+    - openclaw
+    - cursor
+  status: stable
+  requires:
+    - skill-pandadata-api
+  validation_level: runnable
+  maintainer_type: community
+  summary_zh: "期权波动率分析：期权链快照、隐含波动率、历史/实现波动率、IV 分位、期限结构、偏度与波动率溢价报告。"
+  summary_en: "Options volatility analyst skill for option chains, implied volatility, realized volatility, IV percentiles, term structure, skew, and volatility-premium reports."
 ---
 
 # Options Vol Analyst
