@@ -35,6 +35,50 @@ quantSkills:
   summary_en: "Options volatility analyst skill for option chains, implied volatility, realized volatility, IV percentiles, term structure, skew, and volatility-premium reports."
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "补充到期月份、观察窗口、指定合约或希望比较的波动率维度"
+  },
+  "fields": [
+    {
+      "key": "underlying",
+      "label": "期权标的或品种",
+      "type": "text",
+      "required": true,
+      "placeholder": "如：510050.SH、510300.SH、豆粕 M、沪深300股指期权"
+    },
+    {
+      "key": "mode",
+      "label": "分析模式",
+      "type": "select",
+      "default": "full",
+      "options": [
+        { "value": "full", "label": "完整波动率报告" },
+        { "value": "snapshot", "label": "期权链快照" },
+        { "value": "percentile", "label": "IV 历史分位" },
+        { "value": "term", "label": "期限结构" },
+        { "value": "skew", "label": "偏度与微笑" }
+      ]
+    },
+    {
+      "key": "date",
+      "label": "分析日期",
+      "type": "date",
+      "help": "留空时使用最新可用交易日"
+    },
+    {
+      "key": "focus",
+      "label": "重点关注",
+      "type": "text",
+      "placeholder": "如：IV-HV 溢价、近月偏度、流动性过滤"
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}请对期权标的或品种 {{underlying}} 执行 {{mode}} 分析。{{#date}}分析日期为 {{date}}。{{/date}}{{#focus}}重点关注：{{focus}}。{{/focus}}先确认标的、合约、行权价和到期日，再分析期权链、隐含与历史波动率、IV 分位、期限结构、偏度或微笑及流动性；标注方法、参数、计算窗口和数据截止日，输出中文报告。"
+}
+```
+
 # Options Vol Analyst
 
 Use this skill to turn a single options variety, underlying, or contract request into a traceable Pandadata data plan and a Chinese volatility analysis report. Focus on the volatility environment, not order instructions.
